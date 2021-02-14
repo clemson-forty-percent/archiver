@@ -80,6 +80,7 @@ done
 
 # Commit archive of repositories
 pushd "${ARCHIVE_DIR}"
+echo "# ${SOURCE_USER} archive - $(date -I)" > README.md
 git add .
 git commit -m "$(date -I) manual archive"
 git push
