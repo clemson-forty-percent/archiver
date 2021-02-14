@@ -27,6 +27,11 @@ if ! command -v git &> /dev/null; then
     exit 1
 fi
 
+if ! command -v mktemp &> /dev/null; then
+    echo "mktemp missing, is Coreutils/uutils installed?"
+    exit 1
+fi
+
 TEMP_DIR=$(mktemp -d)
 
 ARCHIVE_DIR="${TEMP_DIR}/${ARCHIVE_REPO}"

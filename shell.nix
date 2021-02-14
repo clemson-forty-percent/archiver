@@ -2,6 +2,7 @@
 pkgs.mkShell {
   buildInputs = with pkgs; [
     bash
+    coreutils
     curl
     git
     jq

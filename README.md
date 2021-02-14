@@ -13,6 +13,7 @@ The following are required:
 - Curl
 - Git
 - jq
+- mktemp from GNU CoreUtils
 
 ## Usage
 
